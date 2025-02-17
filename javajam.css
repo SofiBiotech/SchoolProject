@@ -17,11 +17,12 @@ body { background-color: #FCEBB6;
            box-shadow: 3px 3px 3px #676767;
 	   padding: 0;
 }   
-header { background-color: #D2B48C; 
-         color: #8C3826; 
-		 text-align: center; 
-		 padding-top: 5px;
-		 padding-bottom: 5px;
+header { background-image: url(coffeelogo.jpg);
+	 background-repeat: no-repeat;
+         color: #231814; 
+         padding-top: 5px;
+	 padding-bottom: 5px;
+	 padding-left: 240px;
 }
 h1 { font-size: 3em; }
 h2 { color: #8C3826; }
@@ -29,7 +30,10 @@ h3, dt { color: #8C3826; }
 h4 { background-color: #D2B48C;
      font-size: 1.2em;
 	 padding-left: .5em;
-	 padding-bottom: .25em; 
+	 padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #231814
+    clear: left;
 } 
 nav { font-weight: bold; 
 	  text-align: center;
@@ -39,14 +43,10 @@ nav { font-weight: bold;
      	  float: left;
      	  width: 200px;
 }
-nav a { text-decoration: none;
-      color: #FEF6C2;
-      }
-
-nav a:visited { color: #D2B48C; }
-
-nav a:hover { color: #CC9933; }
-
+nav a { text-decoration: none; }
+nav a:link { color: #231814; }
+nav a:visited { color: #231814; }
+nav a:hover { color: #FEF6C2; }
 nav ul { list-style-type: none;
 	padding-left: 0;
        }
@@ -67,9 +67,21 @@ main h2, main h3, main h4, main p, main div, main ul, main dl {
 }
 
 .details { padding-left: 20%;
-           padding-right: 20%; }
+           padding-right: 20%;
+	   overflow: auto;
+	 }
 img { padding-left: 10px;
       padding-right: 10px; }
+
+.floatleft { float: left;
+	     padding-right: 2em;
+	     padding-bottom: 2em;
+	    }
+
+.onethird { float: left;
+	      width: 33%;
+	     }
+
 #homehero { height: 300px;
             background-image: url(hero.jpg);
 	    background-repeat: no-repeat;
